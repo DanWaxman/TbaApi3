@@ -1,1 +1,1 @@
-TbaApi3
+TbaApi3 is a Python library for TheBlueAlliance.com's API version 3.
