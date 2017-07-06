@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='TbaApi3',
-      version='0.1a1',
+      version='0.1a2',
       description='A Python library for the TBA API v3',
       long_description=readme(),
       classifiers=[

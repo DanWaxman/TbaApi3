@@ -4,7 +4,7 @@ from unittest import TestCase
 
 TEAMS = ['frc263', 'frc254', 'frc469']
 EVENTS = {'frc263' : ['2017flwp', '2017nyli'], 'frc254' :['2017casf', '2017dal'], 'frc469' : ['2017micen', '2017micmp2']}
-API_KEY = 'redacted'
+API_KEY = 'MauDxOjjHL3V2TS6LAQJt0dtpMlTeM2IWVuirihlfyikvVGkFrQsFKL6xqcZ1HF3'
 
 
 class TestObject(TestCase):
@@ -65,3 +65,13 @@ class TestTeams(TestCase):
                 test_object.team_event_matches_keys(team, event)
                 test_object.team_event_status(team, event)
                 time.sleep(15)
+
+class TestFunctions(TestCase):
+    def test(self):
+        """
+        ------------------------------------------------
+        |                FUNCTION TESTS                |
+        ------------------------------------------------
+        """
+        test_object = TbaApi3.ApiObject(API_KEY)
+        test_object.get_all_teams()
