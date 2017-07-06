@@ -25,13 +25,15 @@ class ApiObject:
         r = self.make_request('status')
         return Status(r)
 
-    def get_all_teams(self):
+    def get_all_teams(self, year=None):
         """Returns a list of all teams"""
-        teams = self.teams_page(0)
+        if not year:
+            year = self.current_season
+        teams = self.teams_page_year(0, year=year)
         i, prev_len = 1, 0
         while len(teams) > prev_len:
             prev_len = len(teams)
-            teams += self.teams_page(i)
+            teams += self.teams_page_year(i, year=year)
             i += 1
         return teams
 

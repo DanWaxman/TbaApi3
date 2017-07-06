@@ -4,7 +4,7 @@ from unittest import TestCase
 
 TEAMS = ['frc263', 'frc254', 'frc469']
 EVENTS = {'frc263' : ['2017flwp', '2017nyli'], 'frc254' :['2017casf', '2017dal'], 'frc469' : ['2017micen', '2017micmp2']}
-API_KEY = 'MauDxOjjHL3V2TS6LAQJt0dtpMlTeM2IWVuirihlfyikvVGkFrQsFKL6xqcZ1HF3'
+API_KEY = '0fAluHnwin9DXjDAyQGSyzTLLmQfhcphaoVOTX40kdlcQtbfM3a1OVvzhWQsKnmS'
 
 
 class TestObject(TestCase):
